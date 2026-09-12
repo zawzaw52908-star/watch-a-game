@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Arena</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #111827;
+      border-bottom: 1px solid #263044;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 6px;
+      color: #9ca3af;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .login {
+      background: #151c2c;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      border: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .google {
+      background: white;
+      color: black;
+    }
+
+    .game-modes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .mode {
+      background: #151c2c;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .mode h3 {
+      margin-bottom: 8px;
+    }
+
+    .mode p {
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    .join {
+      width: 100%;
+      background: #2563eb;
+      color: white;
+    }
+
+    .lobby {
+      margin-top: 25px;
+      background: #151c2c;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .lobby h2 {
+      margin-bottom: 15px;
+    }
+
+    .create {
+      background: #16a34a;
+      color: white;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎮 GAME ARENA</h1>
+    <p>Play • Create Lobby • Join Match</p>
+  </header>
+
+  <div class="container">
+
+    <div class="login">
+      <h2>🔐 Login</h2>
+      <br>
+      <button class="google">Continue with Google</button>
+    </div>
+
+    <h2>🎯 Choose Match</h2>
+
+    <div class="game-modes">
+
+      <div class="mode">
+        <h3>1 VS 1</h3>
+        <p>Room Card: 1,000 Ks</p>
+        <button class="join">Join</button>
+      </div>
+
+      <div class="mode">
+        <h3>2 VS 2</h3>
+        <p>Room Card: 1,000 Ks</p>
+        <button class="join">Join</button>
+      </div>
+
+      <div class="mode">
+        <h3>3 VS 3</h3>
+        <p>Room Card: 1,000 Ks</p>
+        <button class="join">Join</button>
+      </div>
+
+      <div class="mode">
+        <h3>5 VS 5</h3>
+        <p>Room Card: 1,000 Ks</p>
+        <button class="join">Join</button>
+      </div>
+
+    </div>
+
+    <div class="lobby">
+      <h2>🏠 Lobby</h2>
+      <button class="create">＋ Create Lobby</button>
+
+      <p>🔵 Lobby #1001 — 3/5 Players</p>
+      <br>
+      <button class="join">Join Lobby</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
